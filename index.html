@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="theme-color" content="#060d1a">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trading & Investing Webinar | DEEPTRADING</title>
+<meta name="description" content="Free live Trading & Investing webinar on Indian & Forex markets. Sunday 25 October 2026, 7:00 PM IST, on Google Meet & YouTube.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#060d1a;--panel:rgba(90,160,210,.07);--line:rgba(120,175,225,.26);--ink:#f3f7ff;--muted:#9db0c8;--gold:#d2a367;--gold2:#ecc98a;--teal:#3aa8a4;--red:#ff6b73;--gg:linear-gradient(135deg,#a97c37,#ecc98a 50%,#c99a52);color-scheme:dark;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Plus Jakarta Sans",system-ui,sans-serif;overflow-x:clip;padding-bottom:calc(112px + env(safe-area-inset-bottom,0px));
+background-image:radial-gradient(520px circle at var(--mx,70%) var(--my,30%),rgba(58,168,164,.16),transparent 70%),radial-gradient(900px 500px at 88% -8%,rgba(45,108,223,.30),transparent 70%),radial-gradient(700px 400px at 5% 95%,rgba(58,168,164,.14),transparent 70%),linear-gradient(rgba(120,170,230,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(120,170,230,.06) 1px,transparent 1px);background-size:auto,auto,64px 64px,64px 64px;background-attachment:fixed}
+:focus-visible{outline:3px solid var(--gold2);outline-offset:3px;border-radius:8px}
+button{font-family:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+.an{font-family:"Plus Jakarta Sans",system-ui,sans-serif;font-weight:800;letter-spacing:-.03em}
+.gold{background:var(--gg);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{display:flex;justify-content:space-between;align-items:center;margin:20px auto 0;max-width:1180px;padding:12px 22px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(90deg,rgba(120,175,225,.04),rgba(58,168,164,.16))}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.brand img{width:48px;height:48px;object-fit:contain}
+.brand span{font-size:1.45rem;letter-spacing:.04em;line-height:1;text-transform:uppercase}
+.navr{display:flex;gap:10px}
+.nb{display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 20px;border:1px solid var(--line);border-radius:14px;color:var(--ink);background:rgba(120,175,225,.03);text-decoration:none;font-weight:600;font-size:.95rem;cursor:pointer;transition:background .2s,border-color .2s}
+.nb:hover{background:rgba(120,175,225,.2);border-color:var(--gold)}
+.nb.g{background:var(--gg);color:#07101f;border:0}
+.hero{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:44px;align-items:center;padding:52px 0 36px}
+.live{display:inline-flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:999px;padding:8px 20px 8px 8px;font-weight:600;font-size:.98rem}
+.live i{display:inline-flex;align-items:center;gap:8px;background:var(--gg);color:#07101f;border-radius:999px;padding:6px 16px;font-style:normal;font-weight:800}
+.live i::before{content:"";width:10px;height:10px;border-radius:50%;background:#b3121f;animation:pulse 1.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,59,71,.8)}70%,100%{box-shadow:0 0 0 8px rgba(255,59,71,0)}}
+h1{font-size:clamp(2.6rem,5.8vw,5rem);line-height:1.06;letter-spacing:-.04em;margin:26px 0 14px;font-weight:600}
+.mk{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.mk button{background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:8px 18px;font-weight:700;font-size:1.02rem;cursor:pointer;transition:.2s}
+.mk button[aria-pressed=true]{background:var(--gg);color:#07101f;border-color:transparent}
+.sub{color:#e6eefb;max-width:50ch;margin:0 0 24px}
+.ts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:22px}
+.tp{position:relative;text-align:left;color:var(--ink);background:rgba(120,175,225,.025);border:1px solid var(--line);border-radius:14px;padding:13px 14px;cursor:pointer;overflow:hidden;transition:transform .2s,border-color .2s}
+.tp:hover{transform:translateY(-3px);border-color:var(--gold)}
+.tp::before{content:"";position:absolute;inset:0;background:radial-gradient(170px circle at var(--fx,50%) var(--fy,50%),rgba(120,175,225,.25),transparent 70%);opacity:0;transition:opacity .2s}
+.tp:hover::before{opacity:1}
+.tp b{position:relative;display:flex;justify-content:space-between;gap:10px;font-weight:700;font-size:1rem}
+.tp b::after{content:"+";color:var(--gold);font-size:1.3rem;line-height:1}
+.tp[aria-expanded=true] b::after{content:"\2212"}
+.tp p{position:relative;margin:0;max-height:0;overflow:hidden;transition:max-height .35s,margin .35s;color:var(--muted);font-size:.9rem;line-height:1.45}
+.tp[aria-expanded=true] p{max-height:110px;margin-top:8px}
+.when{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.when span{border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:9px 16px;font-weight:600;font-size:.95rem}
+.when em{font-style:normal;color:var(--gold2)}
+.cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.big{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 30px;border-radius:14px;border:0;background:var(--gg);color:#07101f;font-weight:800;font-size:1.05rem;cursor:pointer;text-decoration:none;transition:transform .15s,box-shadow .2s}
+.big:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(210,163,103,.4)}
+.big.o{background:transparent;color:var(--ink);border:1px solid var(--gold)}
+.big.o:hover{background:rgba(120,175,225,.15);box-shadow:none}
+.cd{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.cd div{min-width:74px;text-align:center;border:1px solid var(--line);border-radius:12px;padding:8px 10px;background:var(--panel)}
+.cd b{display:block;font:700 1.7rem/1.1 "Plus Jakarta Sans",sans-serif;font-variant-numeric:tabular-nums}
+.cd small{color:var(--muted);font-size:.75rem}
+/* chart card */
+.cc{position:relative;border:1px solid var(--line);border-radius:22px;background:linear-gradient(160deg,#0e1a30,#07101f);padding:22px 18px 14px;box-shadow:0 30px 80px rgba(0,0,0,.7),0 0 70px rgba(120,175,225,.12);transition:transform .15s}
+.emb{position:absolute;top:-62px;right:-10px;width:150px;height:150px;object-fit:contain;filter:drop-shadow(0 8px 24px rgba(58,168,164,.5));transition:transform .15s;pointer-events:none}
+.ct{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;padding-right:110px;min-height:54px}
+.ct b{font:700 1.3rem "Plus Jakarta Sans",sans-serif;letter-spacing:-.01em}
+.ct small{display:block;color:var(--muted);font-size:.78rem}
+.ro{font-size:.82rem;color:var(--muted);font-variant-numeric:tabular-nums;margin:6px 0 2px;min-height:1.4em}
+.ro b{color:var(--ink);font-weight:600}
+.cc svg{display:block;width:100%;height:auto;cursor:crosshair;touch-action:none}
+.ov{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 6px}
+.ov button{background:#102036;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:6px 13px;font-size:.84rem;font-weight:600;cursor:pointer}
+.ov button[aria-pressed=true]{background:rgba(120,175,225,.2);border-color:var(--gold);color:var(--gold2)}
+.ov .rp{margin-left:auto;color:var(--gold2)}
+.cc>small{color:var(--muted);font-size:.75rem}
+@keyframes cin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.cn{animation:cin .45s both}
+
+.feat{padding:30px 0 40px}
+.fp{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:center;border:1px solid var(--line);border-radius:32px;padding:44px;background:linear-gradient(160deg,#0f1b31,#07101f);overflow:hidden;position:relative}
+.fp::before{content:"";position:absolute;inset:0;background:radial-gradient(420px circle at var(--px,80%) var(--py,30%),rgba(58,168,164,.20),transparent 70%);pointer-events:none}
+.fl{position:relative}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:6px 16px;font-weight:600;font-size:.9rem;margin-bottom:18px}
+.fl h2{font-size:clamp(2rem,4.4vw,3.6rem);line-height:1.08;letter-spacing:-.04em;font-weight:700;margin:0 0 14px;min-height:2.2em}
+.fl h2 .caret{display:inline-block;width:3px;height:.9em;background:#ecc98a;margin-left:4px;vertical-align:-.08em;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.fl>p{color:var(--muted);max-width:44ch;margin:0 0 20px}
+.seats{display:grid;grid-template-columns:repeat(8,1fr);gap:7px;max-width:440px}
+.seats button{aspect-ratio:1;border-radius:9px 9px 5px 5px;border:1px solid var(--line);background:#0d192b;color:var(--muted);font-size:.72rem;font-weight:600;cursor:pointer;transition:transform .15s,background .2s,box-shadow .2s}
+.seats button:hover{transform:translateY(-3px);border-color:#ecc98a;color:#ecc98a;box-shadow:0 0 14px rgba(120,175,225,.35)}
+.seats button[aria-pressed=true]{background:#ecc98a;color:#07101f;border-color:#ecc98a;box-shadow:0 0 18px rgba(120,175,225,.6)}
+.pick{margin:12px 0 22px;color:var(--muted);font-size:.92rem;min-height:1.5em}
+.pick b{color:#ecc98a}
+.glow{position:relative;display:inline-flex;align-items:center;gap:10px;height:62px;padding:0 40px;border:0;border-radius:16px;background:var(--gg);color:#07101f;font-weight:800;font-size:1.15rem;cursor:pointer;overflow:hidden;animation:gl 2.2s infinite;transition:transform .12s}
+.glow::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(0,0,0,.18),transparent);transform:skewX(-20deg);animation:sh 3s infinite}
+@keyframes gl{0%,100%{box-shadow:0 0 18px rgba(210,163,103,.4),0 0 0 0 rgba(210,163,103,.5)}50%{box-shadow:0 0 46px rgba(236,201,138,.8),0 0 0 14px rgba(210,163,103,0)}}
+@keyframes sh{0%,55%{left:-60%}100%{left:130%}}
+.glow:hover{animation-play-state:paused;box-shadow:0 0 60px rgba(236,201,138,.95)}
+.glow:active{transform:scale(.97)!important}
+.rip{position:absolute;border-radius:50%;background:rgba(0,0,0,.25);transform:scale(0);animation:rp .6s ease-out forwards;pointer-events:none}
+@keyframes rp{to{transform:scale(4);opacity:0}}
+.fr2{position:relative;display:flex;justify-content:center}
+.arch{width:min(380px,100%);aspect-ratio:4/5;border-radius:999px 999px 28px 28px;background:#fff;overflow:hidden;border:3px solid #d2a367;box-shadow:0 0 80px rgba(210,163,103,.3);transition:transform .15s}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 0;mix-blend-mode:multiply;display:block}
+.chp{position:absolute;background:#08111f;border:1px solid #d2a367;color:#f3f7ff;border-radius:999px;padding:8px 16px;font-weight:600;font-size:.88rem;cursor:default;transition:transform .15s,background .2s,color .2s;white-space:nowrap}
+.chp:hover{background:var(--gg);color:#07101f}
+.c1{top:12%;left:-6%}.c2{top:46%;right:-6%}.c3{bottom:10%;left:-2%}
+@media (max-width:900px){.fp{grid-template-columns:1fr;padding:28px 22px}.c1{left:0}.c2{right:0}.seats{grid-template-columns:repeat(8,1fr)}}
+@media (max-width:640px){.glow{width:100%;justify-content:center}}
+
+@property --a{syntax:"<angle>";inherits:false;initial-value:0deg}
+@keyframes spin{to{--a:360deg}}
+.gbx{position:relative;border-radius:20px;background:#08111f;padding:24px;border:1px solid var(--line);isolation:isolate;overflow:hidden;transition:transform .2s,box-shadow .3s}
+.gbx::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.5px;background:conic-gradient(from var(--a),transparent 0 60%,#3aa8a4 80%,#ecc98a 94%,transparent 100%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude;animation:spin 6s linear infinite;pointer-events:none}
+.gbx::after{content:"";position:absolute;inset:0;background:radial-gradient(220px circle at var(--fx,50%) var(--fy,50%),rgba(58,168,164,.22),transparent 70%);opacity:0;transition:opacity .25s;pointer-events:none;z-index:-1}
+.gbx:hover,.gbx.on,.gbx:focus-visible{transform:translateY(-4px);box-shadow:0 0 36px rgba(58,168,164,.35)}
+.gbx:hover::after,.gbx.on::after{opacity:1}
+.gbx.on{background:#0f1f36}
+.sec{padding:44px 0}
+.sh{max-width:720px;margin:0 0 26px}
+.sh h2{font-size:clamp(1.9rem,4vw,3.1rem);letter-spacing:-.04em;line-height:1.08;margin:0 0 10px;font-weight:700}
+.sh p{color:var(--muted);margin:0}
+.i3{display:grid;gap:10px;margin:0 0 24px}
+.ib{padding:14px 18px;border-radius:14px}
+.ib b{display:block;font-weight:700}.ib span{display:block;color:var(--muted);font-size:.92rem;line-height:1.45;margin-top:2px}
+.c4{bottom:-2%;right:-2%}
+.rc{color:var(--muted);font-size:.92rem;margin:16px 0 0}.rc a{color:#ecc98a}
+.vid{position:relative;max-width:960px;aspect-ratio:16/9;border-radius:24px;overflow:hidden;border:1px solid var(--line);background:#08111f;cursor:pointer;display:grid;place-items:center;box-shadow:0 0 60px rgba(120,175,225,.08);transition:box-shadow .3s}
+.vid:hover{box-shadow:0 0 90px rgba(120,175,225,.22)}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vbg{position:absolute;inset:0;background:radial-gradient(500px circle at 50% 50%,rgba(120,175,225,.12),transparent 70%),linear-gradient(rgba(120,175,225,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(120,175,225,.05) 1px,transparent 1px);background-size:auto,48px 48px,48px 48px}
+.vc{position:relative;text-align:center;display:grid;gap:6px;justify-items:center}
+.vc b{font-size:1.25rem}.vc small{color:var(--muted)}
+.pl{width:84px;height:84px;border-radius:50%;background:var(--gg);display:grid;place-items:center;animation:gl 2.2s infinite;transition:transform .2s;padding-left:4px}
+.vid:hover .pl{transform:scale(1.1)}
+.yl{margin:12px 0 0}.yl a{color:var(--muted);font-size:.92rem}
+.sp{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.spc{cursor:pointer;padding:34px}
+.spc .gl{font-size:3.4rem;font-weight:800;line-height:1;color:#ecc98a;display:block;margin-bottom:14px}
+.spc h3{font-size:1.6rem;letter-spacing:-.03em;margin:0 0 6px}.spc p{margin:0;color:var(--muted);font-size:1.05rem}
+.lg{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.lc{cursor:pointer;padding:28px}
+.lc .n{display:block;font-size:2.8rem;font-weight:800;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(120,175,225,.55);margin-bottom:12px}
+.lc h3{font-size:1.4rem;letter-spacing:-.03em;margin:0 0 12px}
+.lc ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.lc li{color:#dbe6f7;padding-left:26px;position:relative}
+.lc li::before{content:"✓";position:absolute;left:0;color:#ecc98a;font-weight:800}
+.cx{padding:44px;text-align:center}
+.cx h2{font-size:clamp(1.9rem,4.4vw,3.3rem);letter-spacing:-.04em;line-height:1.08;margin:0 0 10px;font-weight:700}
+.cx p{color:var(--muted);margin:0 0 24px}
+.cx .cta{justify-content:center}
+a.glow{text-decoration:none}
+.glow.o{background:transparent;color:#ecc98a;border:1px solid #d2a367}
+.glow.o::after{background:linear-gradient(100deg,transparent,rgba(120,175,225,.25),transparent)}
+@media (max-width:760px){.sp,.lg{grid-template-columns:1fr}.cx{padding:30px 20px}.c4{right:0}}
+
+footer{max-width:1180px;margin:30px auto 0;padding:34px 24px 10px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+.fw{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+.fb p{margin:10px 0 0;font-weight:600;color:#ecc98a}
+.fc{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.fc a{color:var(--ink);text-decoration:none;font-size:.95rem}.fc a:hover{color:#ecc98a}
+.dis{margin:22px 0 6px;max-width:80ch}.cp{margin:0}
+.fqt{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;max-width:760px}
+.fqt input{flex:1;min-width:200px;padding:13px 16px;border-radius:12px;border:1px solid var(--line);background:#0a1424;color:var(--ink);font:inherit}
+.btn-t{background:transparent;color:#ecc98a;border:1px solid #d2a367;border-radius:12px;padding:0 20px;font-weight:700;cursor:pointer}
+.btn-t:hover{background:rgba(210,163,103,.15)}
+.fql{display:grid;gap:12px;max-width:760px}
+.fq{padding:0;border-radius:16px}
+.fq:hover{transform:none}
+.fqb{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;background:none;border:0;color:var(--ink);font:700 1.05rem "Plus Jakarta Sans",sans-serif;padding:20px 24px;cursor:pointer}
+.fqb i{flex:none;width:28px;height:28px;border-radius:50%;border:1px solid #d2a367;position:relative;transition:transform .3s,background .2s}
+.fqb i::before,.fqb i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;margin:-1px 0 0 -6px;background:#ecc98a;transition:transform .3s}
+.fqb i::after{transform:rotate(90deg)}
+.fq.open .fqb i{background:rgba(210,163,103,.2);transform:rotate(180deg)}
+.fq.open .fqb i::after{transform:rotate(0)}
+.fqa{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s}
+.fqa>div{overflow:hidden}
+.fq.open .fqa{grid-template-rows:1fr}
+.fqa p{margin:0;padding:0 24px 22px;color:#dbe6f7}
+.fqa a{color:#ecc98a}
+.fq.open{background:#0f1f36}.fq.open::after{opacity:1}
+.fqn{color:var(--muted);margin-top:14px}
+/* bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:5;background:var(--gg);padding:16px 24px calc(16px + env(safe-area-inset-bottom,0px));color:#07101f}
+.bar .in{max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:18px}
+.bar p{margin:0;font-size:clamp(1.05rem,2.4vw,1.8rem);font-weight:800;line-height:1.2}
+.bar p span{font-weight:600;display:block;font-size:.8em;opacity:.75}
+.bcta{background:#08111f;color:var(--gold2);border:0;border-radius:12px;padding:12px 28px;cursor:pointer;text-align:center;font-weight:800;font-size:1.15rem;line-height:1.25;animation:glow 2.4s infinite}
+.bcta small{display:block;color:var(--ink);font-size:.9rem;font-weight:600}
+@keyframes glow{50%{box-shadow:0 0 0 9px rgba(10,10,10,.22)}}
+footer{max-width:1180px;margin:20px auto 0;padding:0 24px;color:var(--muted);font-size:.8rem}
+/* modal */
+dialog{border:1px solid var(--line);background:#08111f;color:var(--ink);border-radius:20px;padding:28px;width:min(450px,92vw);max-height:92vh}
+dialog::backdrop{background:rgba(0,0,0,.8);backdrop-filter:blur(4px)}
+dialog h2{margin:0 0 4px;font:700 1.6rem "Plus Jakarta Sans",sans-serif;letter-spacing:-.02em}
+dialog p{margin:0 0 12px;color:var(--muted);font-size:.93rem}
+.x{position:absolute;top:10px;right:14px;background:none;border:0;color:var(--muted);font-size:1.7rem;cursor:pointer}
+dialog label{display:block;font-weight:600;font-size:.88rem;margin:12px 0 5px}
+dialog input[type=text],dialog input[type=email],dialog input[type=tel]{width:100%;padding:12px 14px;background:#102036;border:1px solid #2c4160;border-radius:10px;color:var(--ink);font:inherit}
+.er{color:var(--red);font-size:.82rem;min-height:1.1em}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chips label{margin:0;font-weight:500}.chips input{position:absolute;opacity:0}
+.chips span{display:block;border:1px solid #2c4160;border-radius:99px;padding:8px 14px;font-size:.9rem;cursor:pointer}
+.chips input:checked+span{background:var(--gg);color:#07101f;border-color:transparent;font-weight:700}
+.chips input:focus-visible+span{outline:3px solid var(--gold2);outline-offset:2px}
+.go{display:block;width:100%;margin-top:16px;background:var(--gg);color:#07101f;border:0;border-radius:12px;padding:14px;font-weight:800;font-size:1rem;cursor:pointer;text-align:center;text-decoration:none}
+.go.o{background:transparent;color:var(--ink);border:1px solid var(--gold);margin-top:10px}
+.ok{text-align:center}.ok .tk{width:60px;height:60px;border-radius:50%;background:var(--gg);color:#07101f;display:grid;place-items:center;font-size:2rem;margin:0 auto 12px;font-weight:800}
+.ok a.lnk{color:var(--gold2);font-size:.88rem}
+@media (max-width:980px){.hero{grid-template-columns:1fr;padding-top:70px}.emb{width:120px;height:120px;top:-70px}}
+@media (max-width:640px){.ts{grid-template-columns:1fr}.bar .in{flex-direction:column;gap:10px;align-items:stretch}.bar p{text-align:center}.nb.wa span{display:none}.nb.wa{padding:0 14px}.brand span{font-size:1.5rem}nav{margin:12px;padding:10px 14px}body{padding-bottom:calc(150px + env(safe-area-inset-bottom,0px))}.big{width:100%}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a class="brand" href="#top" aria-label="DEEPTRADING home"><img data-logo alt="" width="48" height="48"><span class="an">DEEPTRADING</span></a>
+  <div class="navr">
+    <a class="nb wa" href="https://chat.whatsapp.com/Hk7tMfTAGFo8meUSFRbfr8" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 21l1.6-4.8A8.5 8.5 0 1 1 8 19.5z"/></svg><span>Join WhatsApp group</span></a>
+    <button class="nb g" data-reg>Book your seat</button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div>
+    <div class="live"><i>Live</i>Free webinar · Google Meet &amp; YouTube</div>
+    <h1>Trading &amp; Investing <span class="gold">Webinar</span></h1>
+    <div class="mk" role="group" aria-label="Choose a market"><button type="button" data-mk="in" aria-pressed="true">Indian markets</button><button type="button" data-mk="fx" aria-pressed="false">Forex markets</button></div>
+    <p class="sub">We’re revealing our complete trading course: smart money concepts, market auction theory, institutional footprints and order flow, from beginner to advanced.</p>
+    <div class="when"><span>📅 <em>Sunday,</em> 25 October 2026</span><span>🕖 7:00 PM IST</span><span>🔴 Live on Google Meet &amp; YouTube</span></div>
+    <div class="cta"><button class="big" data-reg>Book your free seat</button><a class="big o" href="https://chat.whatsapp.com/Hk7tMfTAGFo8meUSFRbfr8" target="_blank" rel="noopener">Join WhatsApp group</a></div>
+    <p class="rc">Questions? <a href="https://wa.me/919540366555" target="_blank" rel="noopener">WhatsApp +91 95403 66555</a> · <a href="https://t.me/deeptradezz" target="_blank" rel="noopener">Telegram @deeptradezz</a></p>
+    <div class="cd" id="cd" aria-label="Time until the webinar"><div><b>0</b><small>days</small></div><div><b>0</b><small>hours</small></div><div><b>0</b><small>mins</small></div><div><b>0</b><small>secs</small></div></div>
+  </div>
+
+  <div class="cc" id="cc">
+    <img class="emb" data-logo alt="DEEPTRADING emblem" id="emb">
+    <div class="ct"><div><b id="sym">NIFTY 50</b><small>Sample chart · toggle the concepts we teach</small></div></div>
+    <div class="ro" id="ro"></div>
+    <svg id="svg" viewBox="0 0 560 300" role="img" aria-label="Sample candlestick chart with toggleable smart money overlays"></svg>
+    <div class="ov" id="ov" role="group" aria-label="Chart overlays">
+      <button type="button" data-o="ob" aria-pressed="true">Order block</button>
+      <button type="button" data-o="lq" aria-pressed="false">Liquidity sweep</button>
+      <button type="button" data-o="va" aria-pressed="false">Value area</button>
+      <button type="button" class="rp" id="rp">New chart</button>
+    </div>
+    <small>Randomly generated for illustration. Not real market data or a trade signal.</small>
+  </div>
+</header>
+<section class="feat" id="seat"><div class="fp" id="fp">
+  <div class="fl">
+    <span class="tag">Limited seats</span>
+    <h2 id="ty" aria-label="Free live webinar for trading &amp; investing"><span id="tyt"></span><span class="caret" aria-hidden="true"></span></h2>
+    <p>Live on Google Meet &amp; YouTube. Here is what you get when you join, and it is free to book.</p>
+    <div class="i3">
+      <div class="gbx ib"><b>Course duration</b><span>Detailed 3-month journey (beginner to advanced)</span></div>
+      <div class="gbx ib"><b>Exclusive webinar offer</b><span>Special discount &amp; pricing revealed live! Or the detailed fee structure &amp; lifetime access perks.</span></div>
+      <div class="gbx ib"><b>What you’ll get</b><span>Live interactive roadmap, Q&amp;A session, and personal 1:1 customized class details.</span></div>
+    </div>
+    <button class="glow" id="gb" type="button" data-reg>Book your seat</button>
+  </div>
+  <div class="fr2">
+    <div class="arch" id="arch"><img data-host alt="Your host for the DEEPTRADING webinar"></div>
+    <span class="chp c1">SMC</span><span class="chp c2">Order flow &amp; volume profile</span><span class="chp c3">Market auction theory</span><span class="chp c4">Institutional footprints</span>
+  </div>
+</div></section>
+
+<section class="sec" id="watch">
+  <div class="sh"><h2>The webinar &amp; course, explained</h2><p>A quick walkthrough of what we cover on 25th October (in Hindi).</p></div>
+  <div class="vid" id="vid" role="button" tabindex="0" aria-label="Play the walkthrough video">
+    <div class="vbg" aria-hidden="true"></div>
+    <div class="vc"><span class="pl" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="#07101f"><path d="M8 5v14l11-7z"/></svg></span><b>Watch the walkthrough</b><small>In Hindi · tap to play</small></div>
+  </div>
+  <p class="yl"><a href="https://www.youtube.com/watch?v=_hnOAcezZTg" target="_blank" rel="noopener">Open on YouTube</a></p>
+</section>
+
+<section class="sec" id="markets">
+  <div class="sh"><h2>Specializing in Indian &amp; Forex markets</h2><p>Tap a card to see that market on the chart above.</p></div>
+  <div class="sp">
+    <div class="gbx spc" data-mk="in" tabindex="0" role="button"><span class="gl" aria-hidden="true">₹</span><h3>Indian Equity Market</h3><p>Trade Nifty &amp; BankNifty.</p></div>
+    <div class="gbx spc" data-mk="fx" tabindex="0" role="button"><span class="gl" aria-hidden="true">$</span><h3>Forex Market</h3><p>Trade global currencies.</p></div>
+  </div>
+</section>
+
+<section class="sec" id="learn">
+  <div class="sh"><h2>What you’ll learn</h2><p>Read the market the way institutions do. Tap a card to highlight it.</p></div>
+  <div class="lg"><article class="gbx lc" tabindex="0" aria-label="Smart Money Concepts"><span class="n" aria-hidden="true">01</span><h3>Smart Money Concepts</h3><ul><li>Liquidity</li><li>Market structure</li></ul></article><article class="gbx lc" tabindex="0" aria-label="Market Auction Theory"><span class="n" aria-hidden="true">02</span><h3>Market Auction Theory</h3><ul><li>Demand &amp; supply</li><li>Value areas</li><li>Price discovery</li></ul></article><article class="gbx lc" tabindex="0" aria-label="Institutional Footprints"><span class="n" aria-hidden="true">03</span><h3>Institutional Footprints</h3><ul><li>Big players tracking</li><li>Volume analysis</li><li>Smart money moves</li></ul></article><article class="gbx lc" tabindex="0" aria-label="Order Flow & Volume Profile"><span class="n" aria-hidden="true">04</span><h3>Order Flow &amp; Volume Profile</h3><ul><li>Order flow analysis</li><li>Volume profile analysis</li><li>Auction market tracking</li></ul></article></div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="sh"><h2>FAQ</h2><p>Questions, answered.</p></div>
+  <div class="fqt"><input type="search" id="fqs" placeholder="Search questions" aria-label="Search questions"><button type="button" class="btn-t" id="fqall">Expand all</button></div>
+  <div class="fql" id="fql"><div class="gbx fq"><button type="button" class="fqb" id="q0" aria-expanded="false" aria-controls="a0"><span>Is the webinar really free?</span><i aria-hidden="true"></i></button><div class="fqa" id="a0" role="region" aria-labelledby="q0"><div><p>Yes. The live webinar is 100% free. Seats are limited, so book yours in advance.</p></div></div></div><div class="gbx fq"><button type="button" class="fqb" id="q1" aria-expanded="false" aria-controls="a1"><span>Where does it happen?</span><i aria-hidden="true"></i></button><div class="fqa" id="a1" role="region" aria-labelledby="q1"><div><p>Live on Google Meet &amp; YouTube on Sunday, 25 October 2026 at 7:00 PM IST. Joining links are shared in our <a href="https://chat.whatsapp.com/Hk7tMfTAGFo8meUSFRbfr8" target="_blank" rel="noopener">WhatsApp group</a>.</p></div></div></div><div class="gbx fq"><button type="button" class="fqb" id="q2" aria-expanded="false" aria-controls="a2"><span>What language is the webinar in?</span><i aria-hidden="true"></i></button><div class="fqa" id="a2" role="region" aria-labelledby="q2"><div><p>Hindi.</p></div></div></div><div class="gbx fq"><button type="button" class="fqb" id="q3" aria-expanded="false" aria-controls="a3"><span>Do I need any trading experience?</span><i aria-hidden="true"></i></button><div class="fqa" id="a3" role="region" aria-labelledby="q3"><div><p>No. The course runs from beginner to advanced, and the webinar walks through the complete roadmap.</p></div></div></div><div class="gbx fq"><button type="button" class="fqb" id="q4" aria-expanded="false" aria-controls="a4"><span>Which markets do you cover?</span><i aria-hidden="true"></i></button><div class="fqa" id="a4" role="region" aria-labelledby="q4"><div><p>Indian equity markets (Nifty &amp; BankNifty) and the Forex market (global currencies).</p></div></div></div><div class="gbx fq"><button type="button" class="fqb" id="q5" aria-expanded="false" aria-controls="a5"><span>How do I contact you?</span><i aria-hidden="true"></i></button><div class="fqa" id="a5" role="region" aria-labelledby="q5"><div><p>WhatsApp us on <a href="https://wa.me/919540366555" target="_blank" rel="noopener">+91 95403 66555</a>, message <a href="https://t.me/deeptradezz" target="_blank" rel="noopener">@deeptradezz</a> on Telegram, or email <a href="mailto:deepanshu29dy@gmail.com">deepanshu29dy@gmail.com</a>.</p></div></div></div></div>
+  <p class="fqn" id="fqn" hidden>No questions match. Message us on WhatsApp or Telegram and we’ll answer.</p>
+</section>
+
+<section class="sec" id="contact">
+  <div class="gbx cx">
+    <h2>Plan your trade, trade your plan.</h2>
+    <p>Free live webinar · Sunday, 25 October 2026 · 7:00 PM IST</p>
+    <div class="cta">
+      <button class="glow" type="button" data-reg>Book your free seat</button>
+      <a class="glow o" href="https://wa.me/919540366555" target="_blank" rel="noopener">WhatsApp: +91 95403 66555</a>
+      <a class="glow o" href="https://t.me/deeptradezz" target="_blank" rel="noopener">Telegram: @deeptradezz</a>
+    </div>
+  </div>
+</section>
+</div>
+
+<footer><div class="fw">
+  <div class="fb"><a class="brand" href="#top" aria-label="Deep Trading, back to top"><img data-logo alt="" width="40" height="40"><span class="an">Deep Trading</span></a><p>Plan Your Trade, Trade Your Plan</p></div>
+  <ul class="fc"><li><a href="https://wa.me/919540366555" target="_blank" rel="noopener">+91 95403 66555</a></li><li><a href="https://t.me/deeptradezz" target="_blank" rel="noopener">Telegram @deeptradezz</a></li><li><a href="mailto:deepanshu29dy@gmail.com">deepanshu29dy@gmail.com</a></li></ul>
+</div>
+<p class="dis">For educational purposes only. Nothing on this page is investment advice. Trading in equity, derivatives and forex involves substantial risk of loss.</p>
+<p class="cp">© 2026 Deep Trading. All rights reserved.</p></footer>
+
+<div class="bar"><div class="in">
+  <p class="an">Free live webinar <span >Sunday, 25 October · 7:00 PM IST</span></p>
+  <button class="bcta" data-reg>Book your free seat<small>Limited to those who register</small></button>
+</div></div>
+
+<dialog id="dlg" aria-labelledby="dh">
+  <button class="x" id="dx" aria-label="Close">×</button>
+  <div id="fv"><h2 id="dh">Book your free seat</h2><p>Sunday, 25 October 2026 · 7:00 PM IST · Live on Google Meet &amp; YouTube.</p>
+    <form id="f" novalidate>
+      <label for="n">Full name</label><input type="text" id="n" autocomplete="name"><div class="er" id="en"></div>
+      <label for="p">WhatsApp number</label><input type="tel" id="p" autocomplete="tel" placeholder="10-digit mobile number"><div class="er" id="ep"></div>
+      <label for="e">Email</label><input type="email" id="e" autocomplete="email"><div class="er" id="ee"></div>
+      <label id="lm">Which market?</label>
+      <div class="chips" role="radiogroup" aria-labelledby="lm"><label><input type="radio" name="m" value="Indian markets" checked><span>Indian</span></label><label><input type="radio" name="m" value="Forex"><span>Forex</span></label><label><input type="radio" name="m" value="Both"><span>Both</span></label></div>
+      <label id="lx">Your level</label>
+      <div class="chips" role="radiogroup" aria-labelledby="lx"><label><input type="radio" name="x" value="Beginner" checked><span>Beginner</span></label><label><input type="radio" name="x" value="Intermediate"><span>Intermediate</span></label><label><input type="radio" name="x" value="Advanced"><span>Advanced</span></label></div>
+      <button class="go" type="submit">Book my seat</button>
+    </form></div>
+  <div class="ok" id="dv" hidden><div class="tk">✓</div><h2 id="dn"></h2>
+    <p id="dm"></p>
+    <a class="go" id="gm" target="_blank" rel="noopener">Open the email again</a>
+    <a class="go o" href="https://chat.whatsapp.com/Hk7tMfTAGFo8meUSFRbfr8" target="_blank" rel="noopener">Join WhatsApp group</a>
+    <a class="go o" href="https://t.me/deeptradezz" target="_blank" rel="noopener">Message on Telegram: @deeptradezz</a>
+    <a class="go o" id="cal">Add to calendar</a></div>
+</dialog>
+
+<script>
+(function(){
+var LOGO="assets/logo.png",TO="deepanshu29dy@gmail.com",SHEET="https://script.google.com/macros/s/AKfycbwCOn5dHu32Q-HotvE1veZnVj9RgMx8e3tSotq1utiANUd0gn8zVUJaDZEFf1uu56-cDg/exec",EVENT=new Date("2026-10-25T19:00:00+05:30");
+var TOPICS=[["Smart money concepts","Spot where large players place orders: order blocks, liquidity and market structure shifts."],["Market auction theory","Read how price auctions between buyers and sellers, and where fair value sits."],["Institutional footprints","Learn the traces big participants leave on the chart and how to follow them."],["Order flow","Understand who is aggressive in the market, and what that says about the next move."]];
+var MK={in:{n:"NIFTY 50",b:24500,d:2,seed:8},fx:{n:"EUR/USD",b:1.085,d:4,seed:21}},mk="in",seedAdj=0,data=[];
+var $=function(s){return document.querySelector(s)},$$=function(s){return[].slice.call(document.querySelectorAll(s))};
+$$("[data-logo]").forEach(function(i){i.src=LOGO});
+
+// chart
+function rnd(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function gen(seed){var r=rnd(seed),c=100,a=[],i;for(i=0;i<34;i++){var o=c,mv=(r()-.46)*2.4;c=o+mv;a.push({o:o,c:c,h:Math.max(o,c)+r()*.9,l:Math.min(o,c)-r()*.9})}return a}
+var svg=$("#svg"),W=560,H=300,L=58,B=14,geo={};
+function fmt(v){var m=MK[mk];return(m.b*v/100).toLocaleString("en-IN",{minimumFractionDigits:m.d,maximumFractionDigits:m.d})}
+function draw(){
+  var m=MK[mk];data=gen(m.seed+seedAdj);var n=data.length,hi=Math.max.apply(0,data.map(function(d){return d.h})),lo=Math.min.apply(0,data.map(function(d){return d.l})),pad=(hi-lo)*.06;hi+=pad;lo-=pad;
+  var st=(W-L-8)/n,cw=st*.58,X=function(i){return L+(i+.5)*st},Y=function(v){return 8+(hi-v)/(hi-lo)*(H-B-16)},s="",i;
+  for(i=0;i<=4;i++){var v=lo+(hi-lo)*i/4,y=Y(v);s+='<line x1="'+L+'" x2="'+W+'" y1="'+y+'" y2="'+y+'" stroke="#18283f"/><text x="'+(L-6)+'" y="'+(y+3)+'" fill="#7f93ad" font-size="9.5" text-anchor="end">'+fmt(v)+'</text>'}
+  // overlays data
+  var bi=1,bm=0;for(i=2;i<n;i++){var mv=data[i].c-data[i].o;if(mv>bm){bm=mv;bi=i}}var k=bi-1,ob=data[k];
+  var li=0;for(i=1;i<n;i++)if(data[i].l<data[li].l)li=i;
+  var cl=data.map(function(d){return d.c}).sort(function(a,b){return a-b}),vl=cl[Math.floor(n*.3)],vh=cl[Math.floor(n*.7)];
+  s+='<g id="o-va" style="display:none"><rect x="'+L+'" y="'+Y(vh)+'" width="'+(W-L)+'" height="'+(Y(vl)-Y(vh))+'" fill="rgba(236,191,128,.09)"/><line x1="'+L+'" x2="'+W+'" y1="'+Y(vh)+'" y2="'+Y(vh)+'" stroke="#ecc98a" stroke-dasharray="4 4" opacity=".7"/><line x1="'+L+'" x2="'+W+'" y1="'+Y(vl)+'" y2="'+Y(vl)+'" stroke="#ecc98a" stroke-dasharray="4 4" opacity=".7"/><text x="'+(W-4)+'" y="'+(Y(vh)-4)+'" fill="#ecc98a" font-size="10" font-weight="700" text-anchor="end">VAH</text><text x="'+(W-4)+'" y="'+(Y(vl)+12)+'" fill="#ecc98a" font-size="10" font-weight="700" text-anchor="end">VAL</text></g>';
+  s+='<g id="o-ob"><rect x="'+(X(k)-cw/2)+'" y="'+Y(ob.h)+'" width="'+(W-8-X(k)+cw/2)+'" height="'+(Y(ob.l)-Y(ob.h))+'" fill="rgba(236,191,128,.2)" stroke="#ecc98a"/><text x="'+(W-12)+'" y="'+(Y(ob.h)+13)+'" fill="#ecc98a" font-size="10.5" font-weight="700" text-anchor="end">Order block</text></g>';
+  s+='<g id="o-lq" style="display:none"><line x1="'+X(li)+'" x2="'+(W-8)+'" y1="'+Y(data[li].l)+'" y2="'+Y(data[li].l)+'" stroke="#ecc98a" stroke-dasharray="2 4"/><path d="M'+X(li)+' '+(Y(data[li].l)+6)+'l-6 10h12z" fill="#ecc98a"/><text x="'+(X(li)+10)+'" y="'+(Y(data[li].l)+16)+'" fill="#ecc98a" font-size="10.5" font-weight="700">Liquidity sweep</text></g>';
+  for(i=0;i<n;i++){var d=data[i],up=d.c>=d.o,col=up?"#d2a367":"#3f6a96",top=Y(Math.max(d.o,d.c)),bh=Math.max(1.5,Math.abs(Y(d.o)-Y(d.c)));
+    s+='<g class="cn" style="animation-delay:'+i*22+'ms"><line x1="'+X(i)+'" x2="'+X(i)+'" y1="'+Y(d.h)+'" y2="'+Y(d.l)+'" stroke="'+col+'"/><rect x="'+(X(i)-cw/2)+'" y="'+top+'" width="'+cw+'" height="'+bh+'" fill="'+col+'" rx="1"/></g>'}
+  s+='<line id="vx" y1="6" y2="'+(H-B)+'" stroke="#ecc98a" stroke-dasharray="3 3" opacity="0"/>';
+  svg.innerHTML=s;geo={st:st,L:L};$("#sym").textContent=m.n;readout(n-1);applyOv()}
+function readout(i){var d=data[i];$("#ro").innerHTML="O <b>"+fmt(d.o)+"</b> &nbsp;H <b>"+fmt(d.h)+"</b> &nbsp;L <b>"+fmt(d.l)+"</b> &nbsp;C <b>"+fmt(d.c)+"</b>"}
+function applyOv(){$$("#ov [data-o]").forEach(function(b){var g=$("#o-"+b.dataset.o);if(g)g.style.display=b.getAttribute("aria-pressed")=="true"?"":"none"})}
+function mv(e){var r=svg.getBoundingClientRect(),px=(e.clientX-r.left)/r.width*W,i=Math.min(data.length-1,Math.max(0,Math.floor((px-geo.L)/geo.st)));var v=$("#vx"),x=geo.L+(i+.5)*geo.st;v.setAttribute("x1",x);v.setAttribute("x2",x);v.setAttribute("opacity",1);readout(i)}
+svg.addEventListener("pointermove",mv);svg.addEventListener("pointerdown",mv);svg.addEventListener("pointerleave",function(){var v=$("#vx");if(v)v.setAttribute("opacity",0);readout(data.length-1)});
+$("#ov").addEventListener("click",function(e){var b=e.target.closest("[data-o]");if(!b)return;b.setAttribute("aria-pressed",b.getAttribute("aria-pressed")!="true");applyOv()});
+$("#rp").addEventListener("click",function(){seedAdj=Math.floor(Math.random()*1000);draw()});
+$$("[data-mk]").forEach(function(b){b.addEventListener("click",function(){mk=b.dataset.mk;seedAdj=0;$$("[data-mk]").forEach(function(x){x.setAttribute("aria-pressed",x==b)});draw()})});
+draw();
+
+// tilt + glow
+document.addEventListener("pointermove",function(e){document.body.style.setProperty("--mx",e.clientX+"px");document.body.style.setProperty("--my",e.clientY+"px")});
+var cc=$("#cc"),emb=$("#emb");
+cc.addEventListener("pointermove",function(e){if(matchMedia("(prefers-reduced-motion:reduce)").matches)return;var r=cc.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;emb.style.transform="translate("+x*-14+"px,"+y*-10+"px) rotate("+x*8+"deg)"});
+cc.addEventListener("pointerleave",function(){emb.style.transform=""});
+
+// countdown
+var cd=$$("#cd b");
+function tick(){var s=Math.max(0,Math.floor((EVENT-Date.now())/1000)),v=[Math.floor(s/86400),Math.floor(s%86400/3600),Math.floor(s%3600/60),s%60];v.forEach(function(x,i){cd[i].textContent=i?String(x).padStart(2,"0"):x})}
+tick();setInterval(tick,1000);
+
+
+// host photo, seats, typing, glow button
+var HOST="assets/host.jpg";
+$$("[data-host]").forEach(function(i){i.src=HOST});
+var TXT="Free live webinar for trading & investing",ty=$("#tyt"),typed=false;
+function typeIt(){if(typed)return;typed=true;if(matchMedia("(prefers-reduced-motion:reduce)").matches){ty.textContent=TXT;return}var i=0;(function s(){ty.textContent=TXT.slice(0,++i);if(i<TXT.length)setTimeout(s,38)})()}
+if("IntersectionObserver"in window){new IntersectionObserver(function(en,o){if(en[0].isIntersecting){typeIt();o.disconnect()}},{threshold:.35}).observe($("#fp"))}else typeIt();
+$$(".glow").forEach(function(gb){
+  gb.addEventListener("click",function(e){var r=gb.getBoundingClientRect(),d=document.createElement("span");d.className="rip";var s=Math.max(r.width,r.height)/3;d.style.cssText="width:"+s+"px;height:"+s+"px;left:"+(e.clientX-r.left-s/2)+"px;top:"+(e.clientY-r.top-s/2)+"px";gb.appendChild(d);setTimeout(function(){d.remove()},650)});
+  gb.addEventListener("pointermove",function(e){if(matchMedia("(prefers-reduced-motion:reduce)").matches)return;var r=gb.getBoundingClientRect();gb.style.transform="translate("+((e.clientX-r.left)/r.width-.5)*10+"px,"+((e.clientY-r.top)/r.height-.5)*8+"px)"});
+  gb.addEventListener("pointerleave",function(){gb.style.transform=""})});
+var fp=$("#fp"),ar=$("#arch");
+fp.addEventListener("pointermove",function(e){var r=fp.getBoundingClientRect();fp.style.setProperty("--px",e.clientX-r.left+"px");fp.style.setProperty("--py",e.clientY-r.top+"px");if(!matchMedia("(prefers-reduced-motion:reduce)").matches){var x=(e.clientX-r.left)/r.width-.5;ar.style.transform="translateX("+x*10+"px)"}});
+fp.addEventListener("pointerleave",function(){ar.style.transform=""});
+
+// glow boxes: cursor spotlight, click to highlight
+document.addEventListener("pointermove",function(e){var b=e.target.closest&&e.target.closest(".gbx");if(b){var r=b.getBoundingClientRect();b.style.setProperty("--fx",e.clientX-r.left+"px");b.style.setProperty("--fy",e.clientY-r.top+"px")}});
+$$(".lc").forEach(function(c){function t(){c.classList.toggle("on")}c.addEventListener("click",t);c.addEventListener("keydown",function(e){if(e.key=="Enter"||e.key==" "){e.preventDefault();t()}})});
+// video: loads the YouTube player on click
+var vid=$("#vid");function playV(){if(vid.dataset.on)return;vid.dataset.on=1;var f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/_hnOAcezZTg?autoplay=1&rel=0";f.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";f.allowFullscreen=true;f.title="The webinar and course, explained";vid.innerHTML="";vid.appendChild(f);vid.removeAttribute("role");vid.removeAttribute("tabindex")}
+vid.addEventListener("click",playV);vid.addEventListener("keydown",function(e){if(e.key=="Enter"||e.key==" "){e.preventDefault();playV()}});
+// market cards switch the hero chart
+$$(".spc").forEach(function(c){function go(){mk=c.dataset.mk;seedAdj=0;$$("[data-mk]").forEach(function(x){x.setAttribute("aria-pressed",x.dataset.mk==mk)});draw();$("#cc").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"center"})}
+  c.addEventListener("click",go);c.addEventListener("keydown",function(e){if(e.key=="Enter"||e.key==" "){e.preventDefault();go()}})});
+// FAQ accordion + search
+var fqs=$$(".fq");
+function fqSet(f,o){f.classList.toggle("open",o);f.querySelector(".fqb").setAttribute("aria-expanded",o)}
+fqs.forEach(function(f){f.querySelector(".fqb").addEventListener("click",function(){fqSet(f,!f.classList.contains("open"));fqSync()})});
+function fqSync(){var vis=fqs.filter(function(f){return!f.hidden}),all=vis.length&&vis.every(function(f){return f.classList.contains("open")});$("#fqall").textContent=all?"Collapse all":"Expand all"}
+$("#fqall").addEventListener("click",function(){var vis=fqs.filter(function(f){return!f.hidden}),all=vis.every(function(f){return f.classList.contains("open")});vis.forEach(function(f){fqSet(f,!all)});fqSync()});
+$("#fqs").addEventListener("input",function(){var q=this.value.trim().toLowerCase(),n=0;fqs.forEach(function(f){var m=!q||f.textContent.toLowerCase().indexOf(q)>-1;f.hidden=!m;if(m)n++});$("#fqn").hidden=n>0;fqSync()});
+// booking: opens a Gmail draft addressed to the organiser
+var dlg=$("#dlg");function openD(){if(!dlg.open)dlg.showModal()}
+$$("[data-reg]").forEach(function(b){b.addEventListener("click",openD)});
+$("#dx").addEventListener("click",function(){dlg.close()});
+dlg.addEventListener("click",function(e){if(e.target===dlg)dlg.close()});
+$("#f").addEventListener("submit",function(e){e.preventDefault();
+  var n=$("#n").value.trim(),p=$("#p").value.replace(/\D/g,""),m=$("#e").value.trim(),g=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m);
+  $("#en").textContent=n?"":"Enter your name.";$("#ep").textContent=p.length>=10?"":"Enter a 10-digit mobile number.";$("#ee").textContent=g?"":"Enter a valid email, like name@example.com.";
+  if(!n||p.length<10||!g)return;
+  var mkt=document.querySelector('input[name=m]:checked').value,lvl=document.querySelector('input[name=x]:checked').value,
+   su="Webinar seat booking: "+n,body="Hi DEEPTRADING,\n\nPlease book my free seat for the Trading & Investing Webinar (Sunday, 25 October 2026, 7:00 PM IST).\n\nName: "+n+"\nWhatsApp: "+p+"\nEmail: "+m+"\nMarket: "+mkt+"\nLevel: "+lvl+"\n\nThank you!";
+  var gm="https://mail.google.com/mail/?view=cm&fs=1&to="+TO+"&su="+encodeURIComponent(su)+"&body="+encodeURIComponent(body);
+  var btn=$("#f .go");btn.disabled=true;btn.textContent="Booking…";
+  function done(ok){btn.disabled=false;btn.textContent="Book my seat";$("#gm").href=gm;$("#gm").hidden=ok;
+    $("#dm").innerHTML=ok?"We’ve received your details. The joining link will be shared in our WhatsApp group, so join it below.":"Almost done: a Gmail draft with your details is ready. Press <b>Send</b> to confirm your seat.";
+    if(!ok)window.open(gm,"_blank","noopener");
+    $("#dn").textContent=(ok?"You’re booked, ":"Almost there, ")+n.split(" ")[0]+"!";$("#fv").hidden=true;$("#dv").hidden=false}
+  var sent=fetch(SHEET,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify({name:n,phone:p,email:m,market:mkt,level:lvl})});
+  Promise.race([sent,new Promise(function(_,rej){setTimeout(rej,12000)})]).then(function(){done(true)},function(){done(false)});
+  var c=$("#cal");c.href="data:text/calendar;charset=utf8,"+encodeURIComponent("BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nDTSTART:20261025T133000Z\nDTEND:20261025T150000Z\nSUMMARY:DEEPTRADING Trading & Investing Webinar\nLOCATION:Google Meet & YouTube Live\nEND:VEVENT\nEND:VCALENDAR");c.setAttribute("download","deeptrading-webinar.ics")});
+})();
+</script>
+</body>
+</html>
